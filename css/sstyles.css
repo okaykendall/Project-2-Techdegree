@@ -3,7 +3,7 @@
     box-sizing: border-box;
   }
   
-/* General Layout */
+/* Type Layouts */
 
   body {
     font-family: "Merriweather", Georgia, serif;
@@ -27,16 +27,37 @@
       color: darkgrey;
   }
 
-  h2 {
-    font-weight: normal;
-  }
-/* Heading Layout */
-
   header {
   width: 100%;
   margin: 0 auto;
   padding: 1em 1em;
   }
+
+  h1 {
+      margin-top: 10px;
+      margin-bottom: 5px;
+      padding-top: 10px;
+      padding-bottom: 30px;
+  }
+
+  h2 {
+    font-weight: normal;
+  }
+
+  main {
+      width: 100%;
+      background-color: white;
+      padding: 1em 1em;
+      line-height: 1.5;
+  }
+
+  footer {
+      padding-top: 1.5em;
+      margin: 0 auto;
+      line-height: 1.5;
+      color: darkgrey;
+  }
+  /*Class Layouts*/
 
   .profile-image {
     width: 80%;
@@ -49,44 +70,18 @@
       line-height: 1.5;
  }
 
- /* Nav Layout */
-
   .nav { 
       list-style: none;
       padding: 10px;
       color: black; 
     }
 
-.nav li {
+ul li {
       border: solid white 4px;
       background-color: white;
       padding: 10px;
       margin: 5px;
       text-transform: uppercase;
-  }
-
-/* Content Layout */
-
-h1 {
-    margin-top: 10px;
-    margin-bottom: 5px;
-    padding-top: 10px;
-    padding-bottom: 30px;
-}
-  main {
-      width: 100%;
-      background-color: white;
-      padding: 1em 1em;
-      line-height: 1.5;
-  }
-
-/* Footer Layout */ 
- 
-footer {
-      padding-top: 1.5em;
-      margin: 0 auto;
-      line-height: 1.5;
-      color: darkgrey;
   }
 
   .contact-sec ul li {
@@ -104,7 +99,7 @@ footer {
       padding-bottom: 1em;
   }
 
-.bottom-name{
+  .bottom-name{
 float: left;
 margin: 1em 1em;
 }
@@ -116,35 +111,15 @@ margin: 1em 1em;
 
   /*Media Queries */
 
-@media (min-width: 769px) {
-
-    .wrapper {
-    width: 90%;
-    margin: 0 auto;
-    max-width: 1000px;
-    background-color: blue;
-    }
-
-    .name {
-        float: left;
-    }
-
-    .nav {
-        float: right;
-    }
-
-    .nav li {
-        display: inline-block;
-        margin-left: 15px;
-    }
-
-    .intro-bio {
-        font-size: 1.2em;
-    }
-
-    .clearfix::after {
+  @media screen (min-width: 769px) {
+    .clearfix:: after {
         content:"";
         display: table;
         clear:both;
+    }
+    .wrapper {
+    width: 70%;
+    margin: 0 auto;
+    max-width: 1000px;
     }
 }
