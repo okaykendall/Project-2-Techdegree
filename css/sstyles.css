@@ -3,14 +3,15 @@
     box-sizing: border-box;
   }
   
-/* Type Layouts */
+/* General Layout */
 
   body {
-    font-family: "Merriweather", Georgia, serif;
+    font-family: 'Merriweather', Georgia, serif;
     overflow: auto;
     display: inline-block;
     text-align: center; 
     background-color: ghostwhite;
+    margin: 0 auto;
   }
 
   img {
@@ -27,37 +28,15 @@
       color: darkgrey;
   }
 
-  header {
-  width: 100%;
-  margin: 0 auto;
-  padding: 1em 1em;
-  }
-
-  h1 {
-      margin-top: 10px;
-      margin-bottom: 5px;
-      padding-top: 10px;
-      padding-bottom: 30px;
-  }
-
   h2 {
     font-weight: normal;
   }
+/* Heading Layout */
 
-  main {
-      width: 100%;
-      background-color: white;
-      padding: 1em 1em;
-      line-height: 1.5;
+  header {
+  width: 100%;
+  padding: 1em 1em;
   }
-
-  footer {
-      padding-top: 1.5em;
-      margin: 0 auto;
-      line-height: 1.5;
-      color: darkgrey;
-  }
-  /*Class Layouts*/
 
   .profile-image {
     width: 80%;
@@ -70,13 +49,15 @@
       line-height: 1.5;
  }
 
+ /* Nav Layout */
+
   .nav { 
       list-style: none;
       padding: 10px;
       color: black; 
     }
 
-ul li {
+.nav li {
       border: solid white 4px;
       background-color: white;
       padding: 10px;
@@ -84,22 +65,49 @@ ul li {
       text-transform: uppercase;
   }
 
+/* Content Layout */
+
+h1 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+  main {
+      width: 70%;
+      margin: 0 auto;
+      background-color: white;
+      padding: 1em 1em;
+      line-height: 1.5;
+  }
+
+/* Footer Layout */ 
+ 
+footer {
+      padding-top: 1.5em;
+      margin: 0 auto;
+      line-height: 1.5;
+      color: darkgrey;
+      width: 100%;
+  }
+
   .contact-sec ul li {
       background-color: ghostwhite;
       list-style: none;
       display: inline-block;
       border: hidden;
+      text-align: center;
       text-transform: capitalize;
   }
 
   .footer {
       margin-top: 0;
     background-color: ghostwhite;
-      border-top: solid black 1.5px;
+      border-top: solid slategray 1px;
       padding-bottom: 1em;
   }
 
-  .bottom-name{
+.bottom-name{
 float: left;
 margin: 1em 1em;
 }
@@ -109,17 +117,189 @@ float: right;
 margin: 1em 1em;
 }
 
+.footer-nav li {
+  display: none;
+}
+
   /*Media Queries */
 
-  @media screen (min-width: 769px) {
-    .clearfix:: after {
-        content:"";
-        display: table;
-        clear:both;
-    }
-    .wrapper {
-    width: 70%;
+@media screen and (min-width: 768px) {
+
+    body {
+    width: 100%;
     margin: 0 auto;
     max-width: 1000px;
     }
+
+    header {
+    margin: 0 auto;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    }
+
+    .container {
+      min-height: 100vh;
+    }
+    
+    .name {
+      padding-top: 1em;
+    }
+
+    .nav li {
+        display: inline-block;
+        padding-bottom: 5px;
+        margin-top: -2em;
+        border: hidden;
+        background-color: ghostwhite;
+    }
+
+    .intro-bio {
+        float: left;
+        font-size: 1.2em;
+        padding: 1em;
+        width: 50%;
+        text-align: left;
+    }
+
+    .profile-image {
+      float: right;
+      width: 50%;
+      padding-right: 2em;
+    }
+
+    h1 {
+      width: 70%;
+      margin: 0 auto;
+    }
+
+  main {
+    margin-top: 2em;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }  
+
+ .port-icons {
+   width: 40%;
+   display: inline-block;
+   padding-right: 1em;
+   vertical-align: top;
+ } 
+
+ .contact-sec {
+    padding: 1.5em;
+    margin-left: 20%;
+    margin-right: 20%;
+    line-height: 1.5em;
+ }
+
+ .back-to-top {
+   display: none;
+ }
+
+
+ .footer-nav li {
+   display: block;
+   color: black;
+   text-transform: capitalize;
+  list-style: none;
+  padding-right: 1.5em;
+   padding: 10px;
+   float: right;
+   margin-right: 2em;
+   font-size: 15px;
+ }
+
+ .bottom-name {
+   float: left;
+   color: black;
+   padding-right: 1.5em;
+   padding: 10px;
+   margin-left: 1em;
+ }
+
 }
+
+@media screen and (min-width: 1024px) {
+
+
+header {
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 4em;
+  margin: 0 auto;
+}
+
+.footer {
+  width: 100%;
+}
+
+ .name {
+float: left;
+text-align: left;
+font-size: 1.2em;
+padding-left: 1em;
+width: 20%;
+ }
+
+.nav {
+float: right;
+width: 30%;
+padding-left: 0;
+font-size: .8em;
+margin: 10px 0 0 1px;
+vertical-align: top;
+ }
+
+ .intro-bio {
+  float: left;
+  font-size: 1.2em;
+  padding: 1em;
+  padding-left: 1em;
+  width: 50%;
+  text-align: left;
+}
+
+.profile-image {
+float: right;
+width: 50%;
+}
+
+main {
+  width: 75%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 1em;
+  overflow: hidden;
+}
+
+.portfolio-header {
+  font-size: 1.5em;
+}
+
+.port-icons {
+  float: left;
+  vertical-align: top;
+  font-size: .8em;
+  text-align: center;
+  padding-left: 1em;
+  width: 33.3%;
+  margin: 0 auto;
+}
+
+footer {
+  padding-top: 1em;
+}
+
+
+.back-to-top {
+ display: none;
+ }
+
+.clearfix::after {
+        content:"";
+        clear:both;
+        display: table;
+    }
+  }
