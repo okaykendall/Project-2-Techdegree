@@ -25,7 +25,7 @@
   }
 
   a:hover {
-      color: darkgrey;
+    color: darkmagenta;
   }
 
   h2 {
@@ -79,23 +79,50 @@ h1 {
       background-color: white;
       padding: 1em 1em;
       line-height: 1.5;
+      padding-bottom: 2em;
   }
+
+#skills {
+  margin-top: 1em;
+  padding-top: 1em;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  font-size: 32px;
+  letter-spacing: 1px;
+  color: mediumseagreen;
+}
+
+#skills-list {
+  list-style: none;
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 1em 0 1em 0;
+  border-bottom: solid black 1px;
+  line-height: 1.5;
+  color: mediumseagreen;
+  letter-spacing: 1px;
+}
 
 /* Footer Layout */ 
  
 footer {
-      padding-top: 1.5em;
+      padding-top: 1em;
+      padding-left: 1em;
+      padding-right: 1em;
       margin: 0 auto;
       line-height: 1.5;
       color: darkgrey;
       width: 100%;
   }
 
-  .contact-sec ul li {
+  #contact-sec ul li {
       background-color: ghostwhite;
       list-style: none;
-      display: inline-block;
-      border: hidden;
+      padding-left: 0;
+      padding-right: 1.5em;
+      border: 1.5px hidden;
       text-align: center;
       text-transform: capitalize;
   }
@@ -187,7 +214,7 @@ margin: 1em 1em;
    vertical-align: top;
  } 
 
- .contact-sec {
+ #contact-sec {
     padding: 1.5em;
     margin-left: 20%;
     margin-right: 20%;
@@ -239,7 +266,7 @@ header {
  .name {
 float: left;
 text-align: left;
-font-size: 1.2em;
+font-size: 1em;
 padding-left: 1em;
 width: 20%;
  }
@@ -248,8 +275,8 @@ width: 20%;
 float: right;
 width: 30%;
 padding-left: 0;
-font-size: .8em;
-margin: 10px 0 0 1px;
+font-size: .5em;
+margin: 10px 0 1px 1px;
 vertical-align: top;
  }
 
@@ -275,7 +302,7 @@ main {
   overflow: hidden;
 }
 
-.portfolio-header {
+#portfolio-header {
   font-size: 1.5em;
 }
 
@@ -291,6 +318,10 @@ main {
 
 footer {
   padding-top: 5px;
+}
+
+#bottom-list li {
+  display: block;
 }
 
 
