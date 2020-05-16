@@ -53,8 +53,12 @@
 
   .nav { 
       list-style: none;
-      padding: 10px;
       color: black; 
+      padding-left: 0px;
+    }
+
+    .nav ul {
+      list-style-type: none;
     }
 
 .nav li {
@@ -72,6 +76,7 @@ h1 {
     margin-bottom: 5px;
     padding-top: 10px;
     padding-bottom: 30px;
+    text-align: center;
 }
   main {
       width: 70%;
@@ -155,7 +160,6 @@ margin: 1em 1em;
     body {
     width: 100%;
     margin: 0 auto;
-    max-width: 1000px;
     }
 
     header {
@@ -167,6 +171,8 @@ margin: 1em 1em;
 
     .container {
       min-height: 100vh;
+      max-width: 1000px;
+      margin: 0 auto;
     }
     
     .name {
@@ -225,6 +231,9 @@ margin: 1em 1em;
    display: none;
  }
 
+ .footer-nav ul {
+   float: right;
+ }
 
  .footer-nav li {
    display: block;
@@ -233,7 +242,7 @@ margin: 1em 1em;
   list-style: none;
   padding-right: 1.5em;
    padding: 10px;
-   float: right;
+   float: left;
    margin-right: 2em;
    font-size: 15px;
  }
@@ -275,14 +284,14 @@ width: 20%;
 float: right;
 width: 30%;
 padding-left: 0;
-font-size: .5em;
-margin: 10px 0 1px 1px;
+font-size: .3em;
+margin: 5px 0 1px 1px;
 vertical-align: top;
  }
 
  .intro-bio {
   float: left;
-  font-size: 1.2em;
+  font-size: 1em;
   padding: 1em;
   padding-left: 1em;
   width: 50%;
